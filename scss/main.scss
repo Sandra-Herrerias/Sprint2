@@ -1,10 +1,10 @@
-$primary: #e4007c;
-$border-style: none;
-$border1: none;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "buttonsColors";
 .square {
-    background-color: aqua;
+    background-color: $color_principal;
+    border-radius: 999em 40px 40px 999em;
+    padding: 7rem;
+    width: 70%;
 }
 
 .btn-primary {
@@ -25,4 +25,8 @@ $border1: none;
         outline: none;
         box-shadow: none;
     }
+}
+
+img {
+    z-index: 10;
 }
