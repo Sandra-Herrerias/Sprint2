@@ -9782,4 +9782,20 @@ img {
 }
 #myTab li a:hover {
   color: #FA5959;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 992px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .col {
+    flex: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

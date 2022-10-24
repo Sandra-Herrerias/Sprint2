@@ -52,3 +52,44 @@ img {
     color: $color_secundari;
   }
 }
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 992px) {
+       flex-direction: column;
+      }
+}
+
+.col{
+
+    @media screen and (max-width: 992px) {
+        flex: 100%;
+       }
+}
+
+
+@mixin breakpoint($point) {
+    @if $point == xxl {
+      @media screen and (max-width: 1400px) {
+        @content;
+      }
+    } @else if $point == xl {
+      @media screen and (max-width: 1200px) {
+        @content;
+      }
+    } @else if $point == l {
+      @media screen and (max-width: 992px) {
+        @content;
+      }
+    } @else if $point == m {
+      @media screen and (max-width: 768px) {
+        @content;
+      }
+    } @else if $point == s {
+      @media screen and (max-width: 576px) {
+        @content;
+      }
+    }
+  }
