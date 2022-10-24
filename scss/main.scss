@@ -123,6 +123,10 @@ img {
     background-color: rgba(36, 41, 70, 255);
 }
 
+.footerLast a {
+    text-decoration: none;
+}
+
 
 /*** MIXINS ***/
 
@@ -227,5 +231,11 @@ img {
 .operaCard {
     @include lg {
         margin-top: 8rem;
+    }
+}
+
+#footerLast .col {
+    @include mdMax {
+        width: 100%;
     }
 }
