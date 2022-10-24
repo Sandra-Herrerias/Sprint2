@@ -233,9 +233,3 @@ img {
         margin-top: 8rem;
     }
 }
-
-#footerLast .col {
-    @include mdMax {
-        width: 100%;
-    }
-}
