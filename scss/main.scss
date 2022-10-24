@@ -21,7 +21,24 @@
     &:hover {
         color: $color_principal;
         background-color: $white;
-        border: 1px solid $color_principal;
+        border: 2px solid $color_principal;
+    }
+}
+
+.btn-light {
+    &:hover {
+        color: $gray-700;
+        background-color: $white;
+        border: 2px solid $gray-700;
+    }
+}
+
+.btn-danger {
+    background-color: $color_secundari;
+    &:hover {
+        color: $color_secundari;
+        background-color: $white;
+        border: 2px solid $color_secundari;
     }
 }
 
@@ -51,7 +68,8 @@ img {
     color: $black;
 }
 
-#myTab li a {
+#myTab li a,
+#navbarTogglerApp li a {
     border: none;
     color: $gray-600;
     &:hover {
@@ -73,6 +91,27 @@ img {
 
 .accordion-button::after {
     background-image: url("../src/img/Imagenes/icon-arrow.svg");
+    &:hover {
+        color: $color_secundari;
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    color: $black;
+    background-color: $white;
+    &:hover {
+        color: $color_secundari;
+    }
+}
+
+.accordion-button.collapsed {
+    &:hover {
+        color: $color_secundari;
+    }
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FA5959'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 
 
