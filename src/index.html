@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../scss/main.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../src/compiled-scss/main.css" />
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
@@ -14,70 +16,138 @@
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="img/Imagenes/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="img/Imagenes/favicon-32x32.png"
+    />
     <title>Nivell 1</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-            <a class="navbar-brand" href="#">
-                <!-- Logo Image -->
-                <img src="img/Imagenes/logo-bookmark.svg" width="150" alt="logo-bookmark" class="d-inline-block align-middle mr-2" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item px-2">
-                        <a class="nav-link active px-3" aria-current="page" href="#">FEATURES</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link px-3" href="#">PRICING</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link disabled px-3" href="#" tabindex="-1" aria-disabled="true">CONTACT</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <button class="btn btn-danger px-4" type="submit">LOGIN</button>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Hero section -->
-        <div class="row mt-5">
-            <div class="col ">
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h1 class="card-title fw-bold">A Simple Bookmark Manager</h1>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus luctus tortor, in semper velit accumsan a. Vestibulum ultrices sagittis dolor vitae auctor.
-                        </p>
-                        <a href="#" type="button" class="btn btn-primary me-2">Get it on Chrome</a>
-                        <a href="#" type="button" class="btn btn-light me-2">Get it on Firefox</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col position-relative">
-                <figure class="figure">
-                    <img src="img/Imagenes/illustration-hero.svg" class="figure-img img-fluid rounded w-h-100 position-relative" alt=" illustration-hero " />
-                </figure>
-                <div class="square position-absolute bottom-0 end-0 "></div>
-            </div>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <a class="navbar-brand" href="#">
+          <!-- Logo Image -->
+          <img
+            src="img/Imagenes/logo-bookmark.svg"
+            width="150"
+            alt="logo-bookmark"
+            class="d-inline-block align-middle mr-2"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item px-2">
+              <a class="nav-link active px-3" aria-current="page" href="#"
+                >FEATURES</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link px-3" href="#">PRICING</a>
+            </li>
+            <li class="nav-item px-2">
+              <a
+                class="nav-link disabled px-3"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >CONTACT</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <button class="btn btn-danger px-4" type="submit">LOGIN</button>
+            </li>
+          </ul>
         </div>
-
+      </nav>
+      <!-- Hero section -->
+      <div class="row mt-5">
+        <div class="col">
+          <div class="card border-0">
+            <div class="card-body">
+              <h1 class="card-title fw-bold">A Simple Bookmark Manager</h1>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                rhoncus luctus tortor, in semper velit accumsan a. Vestibulum
+                ultrices sagittis dolor vitae auctor.
+              </p>
+              <a href="#" type="button" class="btn btn-primary me-2"
+                >Get it on Chrome</a
+              >
+              <a href="#" type="button" class="btn btn-light me-2"
+                >Get it on Firefox</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col position-relative">
+          <figure class="figure">
+            <img
+              src="img/Imagenes/illustration-hero.svg"
+              class="figure-img img-fluid rounded w-h-100 position-relative"
+              alt=" illustration-hero "
+            />
+          </figure>
+          <div class="square position-absolute bottom-0 end-0"></div>
+        </div>
+      </div>
     </div>
     <!-- Social icons -->
-    <div class="row ">
-        <div class="col ">
-            1 of 3
+    <section>
+      <div class="row mt-5 d-flex justify-content-center">
+        <div class="col-6 text-center">
+          <h4>Features</h4>
+          <p>
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
         </div>
-        <div class="col ">2 of 3</div>
-        <div class="col ">3 of 3</div>
-    </div>
-    </div>
-</body>
 
+        <div id="tabs" class="col-12">
+            <ul class="nav nav-tabs nav-line-tabs nav-line-tabs-2x mb-5 fs-6 nav-fill" id="myTab">
+                <li class="nav-item">
+                    <a class="nav-link active fw-bold" data-bs-toggle="tab" href="#sBookmarking">Simple Bookmarking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" data-bs-toggle="tab" href="#sSearching">Speedy Searching</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" data-bs-toggle="tab" href="#eSharing">Easy Sharing</a>
+                </li>
+            </ul>
+            
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="sBookmarking" role="tabpanel">
+                    one
+                </div>
+                <div class="tab-pane fade" id="sSearching" role="tabpanel">
+                    two
+                </div>
+                <div class="tab-pane fade" id="eSharing" role="tabpanel">
+                    ...
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <div class="row">
+      <div class="col">1 of 3</div>
+      <div class="col">2 of 3</div>
+      <div class="col">3 of 3</div>
+    </div>
+  </body>
 </html>

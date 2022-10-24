@@ -1,32 +1,54 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "buttonsColors";
 .square {
-    background-color: $color_principal;
-    border-radius: 999em 40px 40px 999em;
-    padding: 7rem;
-    width: 70%;
+  background-color: $color_principal;
+  border-radius: 999em 40px 40px 999em;
+  padding: 7rem;
+  width: 70%;
 }
 
 .btn-primary {
-    @include button-variant($color_principal, darken($color_principal, 7.5%), darken($color_principal, 10%), lighten($color_principal, 5%), lighten($color_principal, 10%), darken($color_principal, 30%));
-    color: $white;
+  @include button-variant(
+    $color_principal,
+    darken($color_principal, 7.5%),
+    darken($color_principal, 10%),
+    lighten($color_principal, 5%),
+    lighten($color_principal, 10%),
+    darken($color_principal, 30%)
+  );
+  color: $white;
 }
 
 .navbar-light .navbar-toggler-icon {
-    background-image: url("../src/img/Imagenes/icon-hamburger.svg");
+  background-image: url("../src/img/Imagenes/icon-hamburger.svg");
 }
 
 .navbar-toggler {
-    border: none;
+  border: none;
+  outline: none;
+  &:focus,
+  &:active,
+  &-icon:focus {
     outline: none;
-    &:focus,
-    &:active,
-    &-icon:focus {
-        outline: none;
-        box-shadow: none;
-    }
+    box-shadow: none;
+  }
 }
 
 img {
-    z-index: 10;
+  z-index: 10;
+}
+
+#myTab li a.active {
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom: 6px solid $color_secundari;
+  color: $black;
+}
+
+#myTab li a {
+  border: none;
+  color: $gray-600;
+  &:hover {
+    color: $color_secundari;
+  }
 }
