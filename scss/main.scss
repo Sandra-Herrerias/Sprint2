@@ -1,95 +1,183 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "buttonsColors";
-.square {
-  background-color: $color_principal;
-  border-radius: 999em 40px 40px 999em;
-  padding: 7rem;
-  width: 70%;
+.pillRight {
+    background-color: $color_principal;
+    border-radius: 999em 40px 40px 999em;
+    padding: 7rem;
+    width: 70%;
+}
+
+.pillLeft {
+    background-color: $color_principal;
+    border-radius: 40px 999em 999em 40px;
+    padding: 8rem;
+    margin-left: -7rem;
+    width: 110%;
 }
 
 .btn-primary {
-  @include button-variant(
-    $color_principal,
-    darken($color_principal, 7.5%),
-    darken($color_principal, 10%),
-    lighten($color_principal, 5%),
-    lighten($color_principal, 10%),
-    darken($color_principal, 30%)
-  );
-  color: $white;
+    @include button-variant($color_principal, darken($color_principal, 7.5%), darken($color_principal, 10%), lighten($color_principal, 5%), lighten($color_principal, 10%), darken($color_principal, 30%));
+    color: $white;
+    &:hover {
+        color: $color_principal;
+        background-color: $white;
+        border: 1px solid $color_principal;
+    }
 }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url("../src/img/Imagenes/icon-hamburger.svg");
+    background-image: url("../src/img/Imagenes/icon-hamburger.svg");
 }
 
 .navbar-toggler {
-  border: none;
-  outline: none;
-  &:focus,
-  &:active,
-  &-icon:focus {
+    border: none;
     outline: none;
-    box-shadow: none;
-  }
+    &:focus,
+    &:active,
+    &-icon:focus {
+        outline: none;
+        box-shadow: none;
+    }
 }
 
 img {
-  z-index: 10;
+    z-index: 10;
 }
 
 #myTab li a.active {
-  border-right: transparent;
-  border-left: transparent;
-  border-bottom: 6px solid $color_secundari;
-  color: $black;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 6px solid $color_secundari;
+    color: $black;
 }
 
 #myTab li a {
-  border: none;
-  color: $gray-600;
-  &:hover {
-    color: $color_secundari;
-  }
-}
-
-.row{
-    display: flex;
-    flex-wrap: wrap;
-
-    @media screen and (max-width: 992px) {
-       flex-direction: column;
-      }
-}
-
-.col{
-
-    @media screen and (max-width: 992px) {
-        flex: 100%;
-       }
-}
-
-
-@mixin breakpoint($point) {
-    @if $point == xxl {
-      @media screen and (max-width: 1400px) {
-        @content;
-      }
-    } @else if $point == xl {
-      @media screen and (max-width: 1200px) {
-        @content;
-      }
-    } @else if $point == l {
-      @media screen and (max-width: 992px) {
-        @content;
-      }
-    } @else if $point == m {
-      @media screen and (max-width: 768px) {
-        @content;
-      }
-    } @else if $point == s {
-      @media screen and (max-width: 576px) {
-        @content;
-      }
+    border: none;
+    color: $gray-600;
+    &:hover {
+        color: $color_secundari;
     }
-  }
+}
+
+.card-img-top {
+    width: 50%;
+}
+
+.card-img-dots {
+    width: 100%;
+}
+
+.downloadCard {
+    width: 18rem;
+}
+
+.accordion-button::after {
+    background-image: url("../src/img/Imagenes/icon-arrow.svg");
+}
+
+
+/*** MIXINS ***/
+
+@mixin sm {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mdMax {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin lgMax {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin xxl {
+    @media (min-width: 1400px) {
+        @content;
+    }
+}
+
+.textIniSec {
+    @include sm {
+        text-align: center;
+    }
+}
+
+.textIniSec {
+    @include md {
+        text-align: center;
+    }
+}
+
+.textIniSec {
+    @include lg {
+        text-align: left;
+    }
+}
+
+.pillLeft {
+    @include md {
+        margin-left: -17rem;
+    }
+}
+
+.pillLeft {
+    @include lg {
+        margin-left: -7rem;
+    }
+}
+
+.moreInfoBtn {
+    @include mdMax {
+        display: none;
+    }
+}
+
+.extensionCards {
+    @include lgMax {
+        text-align: -webkit-center;
+        margin-top: 1rem;
+    }
+}
+
+.firefoxCard,
+.operaCard {
+    @include lgMax {
+        margin-top: 1rem;
+    }
+}
+
+.firefoxCard {
+    @include lg {
+        margin-top: 1rem;
+    }
+}
+
+.operaCard {
+    @include lg {
+        margin-top: 8rem;
+    }
+}
