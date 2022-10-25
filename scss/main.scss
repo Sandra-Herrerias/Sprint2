@@ -134,6 +134,9 @@ img {
   text-decoration: none;
 }
 
+
+
+
 /*** MIXINS ***/
 
 @mixin sm {
@@ -235,3 +238,18 @@ img {
         @include childCards;
       }
 }
+
+.formCol{
+      @include sm {
+   width: 100%;
+  }
+}
+
+
+#btnContact{
+    
+    @include sm {
+        margin-bottom: 2rem;
+        width:100%;
+      }
+    }

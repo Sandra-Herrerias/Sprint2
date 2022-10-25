@@ -9919,4 +9919,17 @@ img {
   .cardExtension:nth-child(4) {
     margin-top: 12rem;
   }
+}
+
+@media (max-width: 576px) {
+  .formCol {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  #btnContact {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
