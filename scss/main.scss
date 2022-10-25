@@ -1,235 +1,237 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "buttonsColors";
 .pillRight {
-    background-color: $color_principal;
-    border-radius: 999em 40px 40px 999em;
-    padding: 7rem;
-    width: 70%;
+  background-color: $color_principal;
+  border-radius: 999em 40px 40px 999em;
+  padding: 7rem;
+  width: 70%;
 }
 
 .pillLeft {
-    background-color: $color_principal;
-    border-radius: 40px 999em 999em 40px;
-    padding: 8rem;
-    margin-left: -7rem;
-    width: 110%;
+  background-color: $color_principal;
+  border-radius: 40px 999em 999em 40px;
+  padding: 8rem;
+  margin-left: -7rem;
+  width: 110%;
 }
 
 .btn-primary {
-    @include button-variant($color_principal, darken($color_principal, 7.5%), darken($color_principal, 10%), lighten($color_principal, 5%), lighten($color_principal, 10%), darken($color_principal, 30%));
-    color: $white;
-    &:hover {
-        color: $color_principal;
-        background-color: $white;
-        border: 2px solid $color_principal;
-    }
+  @include button-variant(
+    $color_principal,
+    darken($color_principal, 7.5%),
+    darken($color_principal, 10%),
+    lighten($color_principal, 5%),
+    lighten($color_principal, 10%),
+    darken($color_principal, 30%)
+  );
+  color: $white;
+  &:hover {
+    color: $color_principal;
+    background-color: $white;
+    border: 2px solid $color_principal;
+  }
 }
 
 .btn-light {
-    &:hover {
-        color: $gray-700;
-        background-color: $white;
-        border: 2px solid $gray-700;
-    }
+  &:hover {
+    color: $gray-700;
+    background-color: $white;
+    border: 2px solid $gray-700;
+  }
 }
 
 .btn-danger {
-    background-color: $color_secundari;
-    &:hover {
-        color: $color_secundari;
-        background-color: $white;
-        border: 2px solid $color_secundari;
-    }
+  background-color: $color_secundari;
+  &:hover {
+    color: $color_secundari;
+    background-color: $white;
+    border: 2px solid $color_secundari;
+  }
 }
 
 .navbar-light .navbar-toggler-icon {
-    background-image: url("../src/img/Imagenes/icon-hamburger.svg");
+  background-image: url("../src/img/Imagenes/icon-hamburger.svg");
 }
 
 .navbar-toggler {
-    border: none;
+  border: none;
+  outline: none;
+  &:focus,
+  &:active,
+  &-icon:focus {
     outline: none;
-    &:focus,
-    &:active,
-    &-icon:focus {
-        outline: none;
-        box-shadow: none;
-    }
+    box-shadow: none;
+  }
 }
 
 img {
-    z-index: 10;
+  z-index: 10;
 }
 
 #myTab li a.active {
-    border-right: transparent;
-    border-left: transparent;
-    border-bottom: 6px solid $color_secundari;
-    color: $black;
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom: 6px solid $color_secundari;
+  color: $black;
 }
 
 #myTab li a,
 #navbarTogglerApp li a {
-    border: none;
-    color: $gray-600;
-    &:hover {
-        color: $color_secundari;
-    }
+  border: none;
+  color: $gray-600;
+  &:hover {
+    color: $color_secundari;
+  }
 }
 
 .card-img-top {
-    width: 50%;
+  width: 50%;
 }
 
 .card-img-dots {
-    width: 100%;
+  width: 100%;
 }
 
 .downloadCard {
-    width: 18rem;
+  width: 18rem;
 }
 
 .accordion-button::after {
-    background-image: url("../src/img/Imagenes/icon-arrow.svg");
-    &:hover {
-        color: $color_secundari;
-    }
+  background-image: url("../src/img/Imagenes/icon-arrow.svg");
+  &:hover {
+    color: $color_secundari;
+  }
 }
 
 .accordion-button:not(.collapsed) {
-    color: $black;
-    background-color: $white;
-    &:hover {
-        color: $color_secundari;
-    }
+  color: $black;
+  background-color: $white;
+  &:hover {
+    color: $color_secundari;
+  }
 }
 
 .accordion-button.collapsed {
-    &:hover {
-        color: $color_secundari;
-    }
+  &:hover {
+    color: $color_secundari;
+  }
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FA5959'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FA5959'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 
 .footerIni {
-    background-color: $color_principal;
-    color: $white;
+  background-color: $color_principal;
+  color: $white;
 }
 
 .footerLast {
-    background-color: rgba(36, 41, 70, 255);
+  background-color: rgba(36, 41, 70, 255);
 }
 
 .footerLast a {
-    text-decoration: none;
+  text-decoration: none;
 }
-
 
 /*** MIXINS ***/
 
 @mixin sm {
-    @media (max-width: 576px) {
-        @content;
-    }
+  @media (max-width: 576px) {
+    @content;
+  }
 }
 
 @mixin md {
-    @media (min-width: 768px) {
-        @content;
-    }
+  @media (min-width: 768px) {
+    @content;
+  }
 }
 
 @mixin mdMax {
-    @media (max-width: 768px) {
-        @content;
-    }
+  @media (max-width: 768px) {
+    @content;
+  }
 }
 
 @mixin lg {
-    @media (min-width: 992px) {
-        @content;
-    }
+  @media (min-width: 992px) {
+    @content;
+  }
 }
 
 @mixin lgMax {
-    @media (max-width: 992px) {
-        @content;
-    }
+  @media (max-width: 992px) {
+    @content;
+  }
 }
 
 @mixin xl {
-    @media (min-width: 1200px) {
-        @content;
-    }
+  @media (min-width: 1200px) {
+    @content;
+  }
 }
 
 @mixin xxl {
-    @media (min-width: 1400px) {
-        @content;
-    }
+  @media (min-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin childCards {
+    @for $i from 1 through 4 {
+        &:nth-child(#{$i}) {
+          margin-top: #{$i * 3rem};
+        }
+      }
 }
 
 .textIniSec {
-    @include sm {
-        text-align: center;
-    }
+  @include sm {
+    text-align: center;
+  }
 }
 
 .textIniSec {
-    @include md {
-        text-align: center;
-    }
+  @include md {
+    text-align: center;
+  }
 }
 
 .textIniSec {
-    @include lg {
-        text-align: left;
-    }
+  @include lg {
+    text-align: left;
+  }
 }
 
 .pillLeft {
-    @include md {
-        margin-left: -17rem;
-    }
+  @include md {
+    margin-left: -17rem;
+  }
 }
 
 .pillLeft {
-    @include lg {
-        margin-left: -7rem;
-    }
+  @include lg {
+    margin-left: -7rem;
+  }
 }
 
 .moreInfoBtn {
-    @include mdMax {
-        display: none;
-    }
+  @include mdMax {
+    display: none;
+  }
 }
 
-.extensionCards {
-    @include lgMax {
-        text-align: -webkit-center;
-        margin-top: 1rem;
-    }
+.cardExtension {
+  @include lgMax {
+    text-align: -webkit-center;
+    margin-top: 2rem;
+  }
 }
 
-.firefoxCard,
-.operaCard {
-    @include lgMax {
-        margin-top: 1rem;
-    }
-}
 
-.firefoxCard {
+.cardExtension {
     @include lg {
-        margin-top: 1rem;
-    }
-}
-
-.operaCard {
-    @include lg {
-        margin-top: 8rem;
-    }
+        @include childCards;
+      }
 }

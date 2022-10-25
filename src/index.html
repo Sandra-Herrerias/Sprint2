@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../scss/main.css" />
+    <link rel="stylesheet" href="./compiled-scss/main.css" />
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/tooltipForm.js"></script>
+
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="img/Imagenes/favicon-32x32.png" />
@@ -178,7 +180,7 @@
             <!-- Extensions cards -->
             <div class="container">
                 <div class="row mt-5 extensionCards">
-                    <div class="col align-self-start">
+                    <div class="col align-self-start cardExtension">
                         <div class="card text-center downloadCard shadow">
                             <img src="img/Imagenes/logo-chrome.svg" class="card-img-top mx-auto mt-5" alt="logo-chrome">
                             <div class="card-body">
@@ -189,7 +191,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col align-self-center  firefoxCard">
+                    <div class="col align-self-center  firefoxCard cardExtension">
                         <div class="card text-center downloadCard shadow">
                             <img src="img/Imagenes/logo-firefox.svg" class="card-img-top mx-auto mt-5" alt="logo-firefox">
                             <div class="card-body">
@@ -200,7 +202,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col align-self-end  operaCard">
+                    <div class="col align-self-end operaCard cardExtension">
                         <div class="card text-center downloadCard shadow">
                             <img src="img/Imagenes/logo-opera.svg" class="card-img-top mx-auto mt-5" alt="logo-opera">
                             <div class="card-body">
@@ -281,7 +283,6 @@
                 <!-- Grid container -->
                 <div class="p-4 pb-0 footerIni">
                     <div class="row d-flex justify-content-center">
-                        <!--Grid column-->
                         <div class="col-6">
                             <p class="py-4 fw-bold small">
                                 35,000+ ALREADY JOINED
@@ -289,40 +290,90 @@
                         </div>
                     </div>
                     <div class="row d-flex justify-content-center">
-                        <!--Grid column-->
                         <div class="col-6">
                             <p class="pb-4 fs-1">
                                 Stay up-to-date with what we're doing
                             </p>
                         </div>
                     </div>
-                    <!--Grid column-->
-                    <!-- Section: Form -->
-                    <section class="">
-                        <form action="">
-                            <!--Grid row-->
+                   
+                         <!--
+                        <form action="" needs-validation>
+                           
                             <div class="row d-flex justify-content-center">
-                                <!--Grid column-->
+                                
                                 <div class="col-3">
-                                    <!-- Email input -->
-                                    <div class="form-outline mb-4">
-                                        <input type="email" id="form5Example2" class="form-control" placeholder="Enter your email address" />
-                                        <label class="form-label" for="form5Example2"></label>
+                                   
+                                    <div class="mb-4">
+                                        <input type="email" id="emailToCheck" name="emailToCheck" class="form-control" placeholder="Enter your email address" required/>
+                                        <label class="form-label" for="emailToCheck"></label>
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
                                     </div>
                                 </div>
-                                <!--Grid column-->
+                               
 
-                                <!--Grid column-->
-                                <div class="col-auto">
-                                    <!-- Submit button -->
-                                    <button type="submit" class="btn btn-danger mb-4">Contact us</button>
-                                </div>
-                                <!--Grid column-->
+                            
+                                
+                            
                             </div>
-                            <!--Grid row-->
-                        </form>
-                    </section>
-                    <!-- Section: Form -->
+                           
+                        </form>-->
+
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-4 position-relative">
+                              <label for="validationTooltip01" class="form-label">First name</label>
+                              <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+                              <div class="valid-tooltip">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="col-md-4 position-relative">
+                              <label for="validationTooltip02" class="form-label">Last name</label>
+                              <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+                              <div class="valid-tooltip">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="col-md-4 position-relative">
+                              <label for="validationTooltipUsername" class="form-label">Username</label>
+                              <div class="input-group has-validation">
+                                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                                <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                                <div class="invalid-tooltip">
+                                  Please choose a unique and valid username.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6 position-relative">
+                              <label for="validationTooltip03" class="form-label">City</label>
+                              <input type="text" class="form-control" id="validationTooltip03" required>
+                              <div class="invalid-tooltip">
+                                Please provide a valid city.
+                              </div>
+                            </div>
+                            <div class="col-md-3 position-relative">
+                              <label for="validationTooltip04" class="form-label">State</label>
+                              <select class="form-select" id="validationTooltip04" required>
+                                <option selected disabled value="">Choose...</option>
+                                <option>...</option>
+                              </select>
+                              <div class="invalid-tooltip">
+                                Please select a valid state.
+                              </div>
+                            </div>
+                            <div class="col-md-3 position-relative">
+                              <label for="validationTooltip05" class="form-label">Zip</label>
+                              <input type="text" class="form-control" id="validationTooltip05" required>
+                              <div class="invalid-tooltip">
+                                Please provide a valid zip.
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button class="btn btn-primary" type="submit">Submit form</button>
+                            </div>
+                          </form>
+                            
                 </div>
                 <!-- Grid container -->
 

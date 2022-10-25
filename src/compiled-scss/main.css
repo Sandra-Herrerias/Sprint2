@@ -9714,11 +9714,19 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.square {
+.pillRight {
   background-color: #5265E1;
   border-radius: 999em 40px 40px 999em;
   padding: 7rem;
   width: 70%;
+}
+
+.pillLeft {
+  background-color: #5265E1;
+  border-radius: 40px 999em 999em 40px;
+  padding: 8rem;
+  margin-left: -7rem;
+  width: 110%;
 }
 
 .btn-primary {
@@ -9751,6 +9759,26 @@ textarea.form-control-lg {
   background-color: #5265E1;
   border-color: #3148db;
 }
+.btn-primary:hover {
+  color: #5265E1;
+  background-color: #fff;
+  border: 2px solid #5265E1;
+}
+
+.btn-light:hover {
+  color: #495057;
+  background-color: #fff;
+  border: 2px solid #495057;
+}
+
+.btn-danger {
+  background-color: #FA5959;
+}
+.btn-danger:hover {
+  color: #FA5959;
+  background-color: #fff;
+  border: 2px solid #FA5959;
+}
 
 .navbar-light .navbar-toggler-icon {
   background-image: url("../src/img/Imagenes/icon-hamburger.svg");
@@ -9776,26 +9804,119 @@ img {
   color: #000;
 }
 
-#myTab li a {
+#myTab li a,
+#navbarTogglerApp li a {
   border: none;
   color: #6c757d;
 }
-#myTab li a:hover {
+#myTab li a:hover,
+#navbarTogglerApp li a:hover {
   color: #FA5959;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
+.card-img-top {
+  width: 50%;
 }
-@media screen and (max-width: 992px) {
-  .row {
-    flex-direction: column;
+
+.card-img-dots {
+  width: 100%;
+}
+
+.downloadCard {
+  width: 18rem;
+}
+
+.accordion-button::after {
+  background-image: url("../src/img/Imagenes/icon-arrow.svg");
+}
+.accordion-button::after:hover {
+  color: #FA5959;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: #fff;
+}
+.accordion-button:not(.collapsed):hover {
+  color: #FA5959;
+}
+
+.accordion-button.collapsed:hover {
+  color: #FA5959;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FA5959'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.footerIni {
+  background-color: #5265E1;
+  color: #fff;
+}
+
+.footerLast {
+  background-color: rgb(36, 41, 70);
+}
+
+.footerLast a {
+  text-decoration: none;
+}
+
+/*** MIXINS ***/
+@media (max-width: 576px) {
+  .textIniSec {
+    text-align: center;
   }
 }
 
-@media screen and (max-width: 992px) {
-  .col {
-    flex: 100%;
+@media (min-width: 768px) {
+  .textIniSec {
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .textIniSec {
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .pillLeft {
+    margin-left: -17rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .pillLeft {
+    margin-left: -7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .moreInfoBtn {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .cardExtension {
+    text-align: -webkit-center;
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .cardExtension:nth-child(1) {
+    margin-top: 3rem;
+  }
+  .cardExtension:nth-child(2) {
+    margin-top: 6rem;
+  }
+  .cardExtension:nth-child(3) {
+    margin-top: 9rem;
+  }
+  .cardExtension:nth-child(4) {
+    margin-top: 12rem;
   }
 }/*# sourceMappingURL=main.css.map */
