@@ -206,7 +206,7 @@ img {
 }
 
 .textIniSec {
-    @include md {
+    @include mdMax() {
         text-align: center;
     }
 }
@@ -299,5 +299,8 @@ img {
     float: right;
     @include mdMax {
         float: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 }
