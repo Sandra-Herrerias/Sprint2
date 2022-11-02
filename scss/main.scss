@@ -1,5 +1,10 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "buttonsColors";
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 .pillRight {
     background-color: $color_principal;
     border-radius: 999em 40px 40px 999em;
@@ -8,12 +13,11 @@
     transform: translate(-50%, -105%) !important;
 }
 
-
 .pillLeft {
     background-color: $color_principal;
     border-radius: 40px 999em 999em 40px;
     padding: 9rem;
-    width: 130%;
+    width: 110%;
     transform: translate(-45%, -86%) !important;
 }
 
@@ -119,6 +123,15 @@ img {
 .footerIni {
     background-color: $color_principal;
     color: $white;
+}
+
+.footerIni .row {
+    width: 50%;
+    margin: auto;
+}
+
+.pFooter1 {
+    letter-spacing: 7px;
 }
 
 .footerLast {
