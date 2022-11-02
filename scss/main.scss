@@ -2,6 +2,8 @@
 @import "buttonsColors";
 body {
     overflow-y: scroll;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
@@ -9,8 +11,9 @@ body {
     background-color: $color_principal;
     border-radius: 999em 40px 40px 999em;
     padding: 9rem;
-    width: 130%;
-    transform: translate(-50%, -105%) !important;
+    width: 115%;
+    width: 110%;
+    transform: translate(13%, -109%) !important;
 }
 
 .pillLeft {
@@ -125,11 +128,6 @@ img {
     color: $white;
 }
 
-.footerIni .row {
-    width: 50%;
-    margin: auto;
-}
-
 .pFooter1 {
     letter-spacing: 7px;
 }
@@ -148,6 +146,11 @@ img {
 
 .topTooltip {
     top: 60% !important;
+}
+
+.footerWidth {
+    width: 50%;
+    margin: auto;
 }
 
 .bgColorTooltip {
@@ -258,17 +261,17 @@ img {
 }
 
 #btnContact {
-    @include sm {
-        margin-bottom: 2rem;
-        margin-top: 3rem;
-        width: 100%;
+    @include mdMax {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        width: 65%;
     }
 }
 
 #btnContact {
-    @include mdMax {
-        margin-bottom: 2rem;
-        margin-top: 3rem;
+    @include sm {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
         width: 100%;
     }
 }
@@ -305,5 +308,17 @@ img {
         margin-left: auto;
         margin-right: auto;
         display: block;
+    }
+}
+
+.footerWidth {
+    @include mdMax {
+        width: 100%;
+    }
+}
+
+.footerIni {
+    @include mdMax {
+        width: 100%;
     }
 }
