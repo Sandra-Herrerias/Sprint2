@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../scss/main.css" />
+    <link rel="stylesheet" href="../src/compiled-scss/main.css" />
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="img/Imagenes/favicon-32x32.png" />
     <title>Sprint 2</title>
@@ -42,8 +42,8 @@
         </nav>
         <!-- Initial section -->
         <section id="initialSection">
-            <div class="row mt-5 flex-column flex-lg-row">
-                <div class="col order-2 order-lg-1">
+            <div class="row mt-5 flex-column flex-lg-row ">
+                <div class="col position-relative order-2 order-lg-1">
                     <div class="card border-0 ">
                         <div class="card-body textIniSec">
                             <h1 class="card-title fw-bold">A Simple Bookmark Manager</h1>
@@ -58,10 +58,10 @@
                 <div class="col position-relative order-1 order-lg-2">
                     <figure class="figure">
                         <img src="img/Imagenes/illustration-hero.svg" class="figure-img img-fluid rounded w-h-100 position-relative" alt=" illustration-hero " />
-                    </figure>
-                    <div class="pillRight position-absolute bottom-0 end-0"></div>
+                    </figure> 
+                    <div class="pillRight position-absolute top-55 start-100"></div>
                 </div>
-            </div>
+            </div> 
         </section>
         <!-- Features Section -->
         <section id="features">
@@ -95,10 +95,10 @@
                                     <figure class="figure">
                                         <img src="img/Imagenes/illustration-features-tab-1.svg" class="figure-img img-fluid rounded w-h-100 position-relative" alt=" illustration-tab1" />
                                     </figure>
-                                    <div class="pillLeft position-absolute bottom-0 start-0"></div>
+                                    <div class="pillLeft position-absolute"></div>
                                 </div>
 
-                                <div class="col order-2">
+                                <div class="col mt-5 position-relative order-2">
                                     <div class="card border-0 justify-content-start">
                                         <div class="card-body textIniSec">
                                             <h1 class="card-title fw-bold">Bookmark in one click</h1>
@@ -166,7 +166,7 @@
         <!-- Extensions text -->
         <section id="extensions">
             <div class="row mt-5 d-flex justify-content-center">
-                <div class="col-12 col-lg-6 text-center mb-5">
+                <div class="col-12 col-lg-6 text-center mt-5 mb-3">
                     <h2 class="card-title fw-bold">Download the extension</h2>
                     <p class="card-text">
                         We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.

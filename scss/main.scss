@@ -3,16 +3,18 @@
 .pillRight {
     background-color: $color_principal;
     border-radius: 999em 40px 40px 999em;
-    padding: 7rem;
-    width: 70%;
+    padding: 9rem;
+    width: 130%;
+    transform: translate(-50%, -105%) !important;
 }
+
 
 .pillLeft {
     background-color: $color_principal;
     border-radius: 40px 999em 999em 40px;
-    padding: 8rem;
-    margin-left: -7rem;
-    width: 110%;
+    padding: 9rem;
+    width: 130%;
+    transform: translate(-45%, -86%) !important;
 }
 
 .btn-primary {
@@ -214,18 +216,6 @@ img {
 .textIniSec {
     @include lg {
         text-align: left;
-    }
-}
-
-.pillLeft {
-    @include md {
-        margin-left: -17rem;
-    }
-}
-
-.pillLeft {
-    @include lg {
-        margin-left: -7rem;
     }
 }
 
